@@ -8,20 +8,20 @@ import profile from 'data/user.json';
 import friends from 'data/friends.json';
 import transactions from 'data/transactions.json';
 
-
 export const App = () => {
   return (
     <div>
       <Profile
-      username={profile.username}
-      tag={profile.tag}
-      location={profile.location}
-      avatar={profile.avatar}
-      stats={profile.stats}/>
+        username={profile.username}
+        tag={profile.tag}
+        location={profile.location}
+        avatar={profile.avatar}
+        stats={profile.stats}
+      />
 
-      <Statistics title='Upload stats' stats={data}/>
-      <FriendList friends={friends}/>
-      <TransactionHistory items={transactions}/>
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
